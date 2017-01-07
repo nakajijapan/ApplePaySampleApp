@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y2y-3I-5DY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apple Pay Sample-->
+        <scene sceneID="Z8L-gb-qAG">
+            <objects>
+                <tableViewController id="M6w-Tk-SsI" customClass="MasterViewController" customModule="applepay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xd9-NI-Wz0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="mnW-ZL-nXm" style="IBUITableViewCellStyleDefault" id="6ff-DF-1Vx">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ff-DF-1Vx" id="zVm-WA-wvC">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Product 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mnW-ZL-nXm">
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kWl-zK-sum" kind="show" id="W7Z-92-vRU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M6w-Tk-SsI" id="3Mf-0i-xpT"/>
+                            <outlet property="delegate" destination="M6w-Tk-SsI" id="l4f-7R-3td"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Apple Pay Sample" id="XfG-ES-Ob7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2z-ya-vdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="-619"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="aUO-7e-UBr">
+            <objects>
+                <tableViewController id="kWl-zK-sum" customClass="DetailViewController" customModule="applepay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uge-MJ-qCD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell0" rowHeight="162" id="dpc-zG-g62">
+                                <rect key="frame" x="0.0" y="28" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dpc-zG-g62" id="p8G-nv-nWt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-zm-Rie">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ubN-zm-Rie" firstAttribute="top" secondItem="p8G-nv-nWt" secondAttribute="top" id="Kh3-8P-Z8G"/>
+                                        <constraint firstAttribute="trailing" secondItem="ubN-zm-Rie" secondAttribute="trailing" id="TOp-hr-ydd"/>
+                                        <constraint firstAttribute="bottom" secondItem="ubN-zm-Rie" secondAttribute="bottom" id="nF7-CT-nYE"/>
+                                        <constraint firstItem="ubN-zm-Rie" firstAttribute="leading" secondItem="p8G-nv-nWt" secondAttribute="leading" id="uG3-4R-fvl"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" textLabel="CQk-BN-3wc" detailTextLabel="SBj-YF-OLa" rowHeight="59" style="IBUITableViewCellStyleValue1" id="mlg-Jr-olP">
+                                <rect key="frame" x="0.0" y="190" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mlg-Jr-olP" id="DTy-RY-Obu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CQk-BN-3wc">
+                                            <rect key="frame" x="15" y="20" width="101.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="¥ 1,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SBj-YF-OLa">
+                                            <rect key="frame" x="305.5" y="20" width="54.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell2" rowHeight="59" id="mIo-CD-3mX">
+                                <rect key="frame" x="0.0" y="249" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mIo-CD-3mX" id="5yO-MQ-3hG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvB-RE-wlB">
+                                            <rect key="frame" x="101" y="14.5" width="173" height="30"/>
+                                            <state key="normal" title="Apple Pay Part 1 - Simple"/>
+                                            <connections>
+                                                <action selector="applePayButtonDidTap:" destination="kWl-zK-sum" eventType="touchUpInside" id="nc0-8b-EM7"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wvB-RE-wlB" firstAttribute="centerX" secondItem="5yO-MQ-3hG" secondAttribute="centerX" id="6hY-LL-2Gv"/>
+                                        <constraint firstItem="wvB-RE-wlB" firstAttribute="centerY" secondItem="5yO-MQ-3hG" secondAttribute="centerY" id="s4r-Dq-Wlt"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell3" rowHeight="59" id="88n-zZ-Aeg">
+                                <rect key="frame" x="0.0" y="308" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88n-zZ-Aeg" id="aGI-tj-0XY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpy-Ib-L7e">
+                                            <rect key="frame" x="130.5" y="14.5" width="114" height="30"/>
+                                            <state key="normal" title="Apple Pay Part 2"/>
+                                            <connections>
+                                                <action selector="applePayButton2DidTap:" destination="kWl-zK-sum" eventType="touchUpInside" id="RIP-hy-fLt"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kpy-Ib-L7e" firstAttribute="centerY" secondItem="aGI-tj-0XY" secondAttribute="centerY" id="OmW-Ir-58n"/>
+                                        <constraint firstItem="Kpy-Ib-L7e" firstAttribute="centerX" secondItem="aGI-tj-0XY" secondAttribute="centerX" id="iXp-Y1-M67"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell4" rowHeight="59" id="KkO-fR-Jbn" userLabel="Cell4">
+                                <rect key="frame" x="0.0" y="367" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KkO-fR-Jbn" id="0aK-kV-FxU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="kWl-zK-sum" id="AuW-by-agH"/>
+                            <outlet property="delegate" destination="kWl-zK-sum" id="sEo-jn-dJx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRE-Fc-sDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="-619"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3M1-Qa-eLe">
+            <objects>
+                <navigationController id="Y2y-3I-5DY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MqU-x1-aH0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="M6w-Tk-SsI" kind="relationship" relationship="rootViewController" id="6Nl-eg-Bu2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYY-ri-VE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723" y="-619"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="product" width="244" height="153"/>
+    </resources>
+</document>

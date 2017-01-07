@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC98C1CE1D32426500041706 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC98C1CD1D32426500041706 /* PassKit.framework */; };
+		DCAC2D7E1D3699CD00A21902 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAC2D7C1D3699CD00A21902 /* Contacts.framework */; };
+		DCAC2D7F1D3699CD00A21902 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAC2D7D1D3699CD00A21902 /* ContactsUI.framework */; };
+		DCD2FCA31D2DDACC004E4674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2FCA21D2DDACC004E4674 /* AppDelegate.swift */; };
+		DCD2FCA51D2DDACC004E4674 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2FCA41D2DDACC004E4674 /* MasterViewController.swift */; };
+		DCD2FCA71D2DDACC004E4674 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2FCA61D2DDACC004E4674 /* DetailViewController.swift */; };
+		DCD2FCAA1D2DDACC004E4674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD2FCA81D2DDACC004E4674 /* Main.storyboard */; };
+		DCD2FCAC1D2DDACC004E4674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD2FCAB1D2DDACC004E4674 /* Assets.xcassets */; };
+		DCD2FCAF1D2DDACC004E4674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD2FCAD1D2DDACC004E4674 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC98C1CD1D32426500041706 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		DCAC2D7C1D3699CD00A21902 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		DCAC2D7D1D3699CD00A21902 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		DCD2FC9F1D2DDACC004E4674 /* applepay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = applepay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD2FCA21D2DDACC004E4674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCD2FCA41D2DDACC004E4674 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		DCD2FCA61D2DDACC004E4674 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DCD2FCA91D2DDACC004E4674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCD2FCAB1D2DDACC004E4674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD2FCAE1D2DDACC004E4674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCD2FCB01D2DDACC004E4674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD2FCB61D2DDADE004E4674 /* applepay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = applepay.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD2FC9C1D2DDACC004E4674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAC2D7E1D3699CD00A21902 /* Contacts.framework in Frameworks */,
+				DCAC2D7F1D3699CD00A21902 /* ContactsUI.framework in Frameworks */,
+				DC98C1CE1D32426500041706 /* PassKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC9A9D3E1E20E9DB0038C83C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCAC2D7C1D3699CD00A21902 /* Contacts.framework */,
+				DCAC2D7D1D3699CD00A21902 /* ContactsUI.framework */,
+				DC98C1CD1D32426500041706 /* PassKit.framework */,
+			);
+			name = Frameworks;
+			path = applepay;
+			sourceTree = "<group>";
+		};
+		DCD2FC961D2DDACC004E4674 = {
+			isa = PBXGroup;
+			children = (
+				DCD2FCA11D2DDACC004E4674 /* applepay */,
+				DC9A9D3E1E20E9DB0038C83C /* Frameworks */,
+				DCD2FCA01D2DDACC004E4674 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD2FCA01D2DDACC004E4674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD2FC9F1D2DDACC004E4674 /* applepay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD2FCA11D2DDACC004E4674 /* applepay */ = {
+			isa = PBXGroup;
+			children = (
+				DCD2FCB61D2DDADE004E4674 /* applepay.entitlements */,
+				DCD2FCA21D2DDACC004E4674 /* AppDelegate.swift */,
+				DCD2FCA41D2DDACC004E4674 /* MasterViewController.swift */,
+				DCD2FCA61D2DDACC004E4674 /* DetailViewController.swift */,
+				DCD2FCA81D2DDACC004E4674 /* Main.storyboard */,
+				DCD2FCAB1D2DDACC004E4674 /* Assets.xcassets */,
+				DCD2FCAD1D2DDACC004E4674 /* LaunchScreen.storyboard */,
+				DCD2FCB01D2DDACC004E4674 /* Info.plist */,
+			);
+			path = applepay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD2FC9E1D2DDACC004E4674 /* applepay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD2FCB31D2DDACC004E4674 /* Build configuration list for PBXNativeTarget "applepay" */;
+			buildPhases = (
+				DCD2FC9B1D2DDACC004E4674 /* Sources */,
+				DCD2FC9C1D2DDACC004E4674 /* Frameworks */,
+				DCD2FC9D1D2DDACC004E4674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = applepay;
+			productName = applepay;
+			productReference = DCD2FC9F1D2DDACC004E4674 /* applepay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD2FC971D2DDACC004E4674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = nakajijapan;
+				TargetAttributes = {
+					DCD2FC9E1D2DDACC004E4674 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CNE5C4C374;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+							com.apple.Wallet = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DCD2FC9A1D2DDACC004E4674 /* Build configuration list for PBXProject "applepay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCD2FC961D2DDACC004E4674;
+			productRefGroup = DCD2FCA01D2DDACC004E4674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD2FC9E1D2DDACC004E4674 /* applepay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD2FC9D1D2DDACC004E4674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD2FCAF1D2DDACC004E4674 /* LaunchScreen.storyboard in Resources */,
+				DCD2FCAC1D2DDACC004E4674 /* Assets.xcassets in Resources */,
+				DCD2FCAA1D2DDACC004E4674 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD2FC9B1D2DDACC004E4674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD2FCA71D2DDACC004E4674 /* DetailViewController.swift in Sources */,
+				DCD2FCA51D2DDACC004E4674 /* MasterViewController.swift in Sources */,
+				DCD2FCA31D2DDACC004E4674 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCD2FCA81D2DDACC004E4674 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD2FCA91D2DDACC004E4674 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCD2FCAD1D2DDACC004E4674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD2FCAE1D2DDACC004E4674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCD2FCB11D2DDACC004E4674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DCD2FCB21D2DDACC004E4674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD2FCB41D2DDACC004E4674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = applepay/applepay.entitlements;
+				DEVELOPMENT_TEAM = CNE5C4C374;
+				INFOPLIST_FILE = applepay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.applepay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DCD2FCB51D2DDACC004E4674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = applepay/applepay.entitlements;
+				DEVELOPMENT_TEAM = CNE5C4C374;
+				INFOPLIST_FILE = applepay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.applepay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD2FC9A1D2DDACC004E4674 /* Build configuration list for PBXProject "applepay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD2FCB11D2DDACC004E4674 /* Debug */,
+				DCD2FCB21D2DDACC004E4674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD2FCB31D2DDACC004E4674 /* Build configuration list for PBXNativeTarget "applepay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD2FCB41D2DDACC004E4674 /* Debug */,
+				DCD2FCB51D2DDACC004E4674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD2FC971D2DDACC004E4674 /* Project object */;
+}
