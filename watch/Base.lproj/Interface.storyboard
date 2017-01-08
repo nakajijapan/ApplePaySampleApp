@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PQN-u7-epC">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label width="1" height="26" alignment="left" text="Alert Label" numberOfLines="2" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="payment" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="yBQ-Ms-Zjf"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Product-->
+        <scene sceneID="dHO-Xl-uyD">
+            <objects>
+                <controller identifier="PaymentInterfaceController" title="Product" id="Yb3-71-9FU" customClass="PaymentInterfaceController" customModule="watch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Label" id="17H-le-yli"/>
+                        <imageView height="1" alignment="center" contentMode="scaleAspectFill" id="kz9-UO-eCp"/>
+                        <paymentButton width="1" alignment="left" id="umx-oE-LbM">
+                            <connections>
+                                <action selector="paymentButtonDidTap" destination="Yb3-71-9FU" id="5NM-a2-isP"/>
+                            </connections>
+                        </paymentButton>
+                    </items>
+                    <connections>
+                        <outlet property="applePayButton" destination="umx-oE-LbM" id="xBA-Qj-x2Q"/>
+                        <outlet property="productImage" destination="kz9-UO-eCp" id="boH-sf-NO5"/>
+                        <outlet property="titleLabel" destination="17H-le-yli" id="5Nz-f4-VXO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="490" y="359"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="watch" customModuleProvider="target">
+                    <items>
+                        <imageView width="1" height="98" alignment="left" image="warning" id="gdL-nS-lPR" userLabel="warning"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="490" y="643"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="yad-LW-C09">
+            <objects>
+                <controller id="PQN-u7-epC" customClass="InterfaceController" customModule="watch_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="Sample" textAlignment="center" id="aQ4-qE-8MO">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="353"/>
+        </scene>
+    </scenes>
+</document>

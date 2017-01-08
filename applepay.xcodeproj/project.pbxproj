@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC6610071E21EB6600CA9BE7 /* PaymentInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6610061E21EB6600CA9BE7 /* PaymentInterfaceController.swift */; };
 		DC98C1CE1D32426500041706 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC98C1CD1D32426500041706 /* PassKit.framework */; };
+		DC9A9D451E20FC0C0038C83C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9A9D431E20FC0C0038C83C /* Interface.storyboard */; };
+		DC9A9D471E20FC0C0038C83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9A9D461E20FC0C0038C83C /* Assets.xcassets */; };
+		DC9A9D4E1E20FC0C0038C83C /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC9A9D4D1E20FC0C0038C83C /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC9A9D551E20FC0C0038C83C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9A9D541E20FC0C0038C83C /* InterfaceController.swift */; };
+		DC9A9D571E20FC0C0038C83C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9A9D561E20FC0C0038C83C /* ExtensionDelegate.swift */; };
+		DC9A9D591E20FC0C0038C83C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9A9D581E20FC0C0038C83C /* NotificationController.swift */; };
+		DC9A9D5B1E20FC0C0038C83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9A9D5A1E20FC0C0038C83C /* Assets.xcassets */; };
+		DC9A9D5F1E20FC0C0038C83C /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DC9A9D411E20FC0C0038C83C /* watch.app */; };
 		DCAC2D7E1D3699CD00A21902 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAC2D7C1D3699CD00A21902 /* Contacts.framework */; };
 		DCAC2D7F1D3699CD00A21902 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAC2D7D1D3699CD00A21902 /* ContactsUI.framework */; };
 		DCD2FCA31D2DDACC004E4674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2FCA21D2DDACC004E4674 /* AppDelegate.swift */; };
@@ -18,8 +27,63 @@
 		DCD2FCAF1D2DDACC004E4674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD2FCAD1D2DDACC004E4674 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DC9A9D4F1E20FC0C0038C83C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD2FC971D2DDACC004E4674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC9A9D4C1E20FC0C0038C83C;
+			remoteInfo = "watch Extension";
+		};
+		DC9A9D5D1E20FC0C0038C83C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD2FC971D2DDACC004E4674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC9A9D401E20FC0C0038C83C;
+			remoteInfo = watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC9A9D651E20FC0C0038C83C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC9A9D4E1E20FC0C0038C83C /* watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9A9D671E20FC0C0038C83C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DC9A9D5F1E20FC0C0038C83C /* watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DC6610061E21EB6600CA9BE7 /* PaymentInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInterfaceController.swift; sourceTree = "<group>"; };
 		DC98C1CD1D32426500041706 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		DC9A9D411E20FC0C0038C83C /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9A9D441E20FC0C0038C83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DC9A9D461E20FC0C0038C83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC9A9D481E20FC0C0038C83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9A9D4D1E20FC0C0038C83C /* watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9A9D531E20FC0C0038C83C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DC9A9D541E20FC0C0038C83C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DC9A9D561E20FC0C0038C83C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DC9A9D581E20FC0C0038C83C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DC9A9D5A1E20FC0C0038C83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC9A9D5C1E20FC0C0038C83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9A9D681E2147580038C83C /* watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watch Extension.entitlements"; sourceTree = "<group>"; };
 		DCAC2D7C1D3699CD00A21902 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		DCAC2D7D1D3699CD00A21902 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		DCD2FC9F1D2DDACC004E4674 /* applepay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = applepay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +98,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC9A9D4A1E20FC0C0038C83C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD2FC9C1D2DDACC004E4674 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,10 +129,45 @@
 			path = applepay;
 			sourceTree = "<group>";
 		};
+		DC9A9D421E20FC0C0038C83C /* watch */ = {
+			isa = PBXGroup;
+			children = (
+				DC9A9D431E20FC0C0038C83C /* Interface.storyboard */,
+				DC9A9D461E20FC0C0038C83C /* Assets.xcassets */,
+				DC9A9D481E20FC0C0038C83C /* Info.plist */,
+			);
+			path = watch;
+			sourceTree = "<group>";
+		};
+		DC9A9D511E20FC0C0038C83C /* watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DC9A9D681E2147580038C83C /* watch Extension.entitlements */,
+				DC9A9D541E20FC0C0038C83C /* InterfaceController.swift */,
+				DC6610061E21EB6600CA9BE7 /* PaymentInterfaceController.swift */,
+				DC9A9D561E20FC0C0038C83C /* ExtensionDelegate.swift */,
+				DC9A9D581E20FC0C0038C83C /* NotificationController.swift */,
+				DC9A9D5A1E20FC0C0038C83C /* Assets.xcassets */,
+				DC9A9D5C1E20FC0C0038C83C /* Info.plist */,
+				DC9A9D521E20FC0C0038C83C /* Supporting Files */,
+			);
+			path = "watch Extension";
+			sourceTree = "<group>";
+		};
+		DC9A9D521E20FC0C0038C83C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC9A9D531E20FC0C0038C83C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DCD2FC961D2DDACC004E4674 = {
 			isa = PBXGroup;
 			children = (
 				DCD2FCA11D2DDACC004E4674 /* applepay */,
+				DC9A9D421E20FC0C0038C83C /* watch */,
+				DC9A9D511E20FC0C0038C83C /* watch Extension */,
 				DC9A9D3E1E20E9DB0038C83C /* Frameworks */,
 				DCD2FCA01D2DDACC004E4674 /* Products */,
 			);
@@ -71,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				DCD2FC9F1D2DDACC004E4674 /* applepay.app */,
+				DC9A9D411E20FC0C0038C83C /* watch.app */,
+				DC9A9D4D1E20FC0C0038C83C /* watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +201,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC9A9D401E20FC0C0038C83C /* watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9A9D661E20FC0C0038C83C /* Build configuration list for PBXNativeTarget "watch" */;
+			buildPhases = (
+				DC9A9D3F1E20FC0C0038C83C /* Resources */,
+				DC9A9D651E20FC0C0038C83C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9A9D501E20FC0C0038C83C /* PBXTargetDependency */,
+			);
+			name = watch;
+			productName = watch;
+			productReference = DC9A9D411E20FC0C0038C83C /* watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DC9A9D4C1E20FC0C0038C83C /* watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9A9D641E20FC0C0038C83C /* Build configuration list for PBXNativeTarget "watch Extension" */;
+			buildPhases = (
+				DC9A9D491E20FC0C0038C83C /* Sources */,
+				DC9A9D4A1E20FC0C0038C83C /* Frameworks */,
+				DC9A9D4B1E20FC0C0038C83C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watch Extension";
+			productName = "watch Extension";
+			productReference = DC9A9D4D1E20FC0C0038C83C /* watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		DCD2FC9E1D2DDACC004E4674 /* applepay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD2FCB31D2DDACC004E4674 /* Build configuration list for PBXNativeTarget "applepay" */;
@@ -100,10 +242,12 @@
 				DCD2FC9B1D2DDACC004E4674 /* Sources */,
 				DCD2FC9C1D2DDACC004E4674 /* Frameworks */,
 				DCD2FC9D1D2DDACC004E4674 /* Resources */,
+				DC9A9D671E20FC0C0038C83C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC9A9D5E1E20FC0C0038C83C /* PBXTargetDependency */,
 			);
 			name = applepay;
 			productName = applepay;
@@ -116,10 +260,28 @@
 		DCD2FC971D2DDACC004E4674 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = nakajijapan;
 				TargetAttributes = {
+					DC9A9D401E20FC0C0038C83C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CNE5C4C374;
+						ProvisioningStyle = Automatic;
+					};
+					DC9A9D4C1E20FC0C0038C83C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CNE5C4C374;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
 					DCD2FC9E1D2DDACC004E4674 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = CNE5C4C374;
@@ -149,11 +311,30 @@
 			projectRoot = "";
 			targets = (
 				DCD2FC9E1D2DDACC004E4674 /* applepay */,
+				DC9A9D401E20FC0C0038C83C /* watch */,
+				DC9A9D4C1E20FC0C0038C83C /* watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC9A9D3F1E20FC0C0038C83C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9A9D471E20FC0C0038C83C /* Assets.xcassets in Resources */,
+				DC9A9D451E20FC0C0038C83C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9A9D4B1E20FC0C0038C83C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9A9D5B1E20FC0C0038C83C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD2FC9D1D2DDACC004E4674 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +348,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC9A9D491E20FC0C0038C83C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6610071E21EB6600CA9BE7 /* PaymentInterfaceController.swift in Sources */,
+				DC9A9D591E20FC0C0038C83C /* NotificationController.swift in Sources */,
+				DC9A9D571E20FC0C0038C83C /* ExtensionDelegate.swift in Sources */,
+				DC9A9D551E20FC0C0038C83C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD2FC9B1D2DDACC004E4674 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,7 +371,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DC9A9D501E20FC0C0038C83C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC9A9D4C1E20FC0C0038C83C /* watch Extension */;
+			targetProxy = DC9A9D4F1E20FC0C0038C83C /* PBXContainerItemProxy */;
+		};
+		DC9A9D5E1E20FC0C0038C83C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC9A9D401E20FC0C0038C83C /* watch */;
+			targetProxy = DC9A9D5D1E20FC0C0038C83C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		DC9A9D431E20FC0C0038C83C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9A9D441E20FC0C0038C83C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		DCD2FCA81D2DDACC004E4674 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -199,6 +412,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC9A9D601E20FC0C0038C83C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = CNE5C4C374;
+				IBSC_MODULE = watch_Extension;
+				INFOPLIST_FILE = watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.applepay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		DC9A9D611E20FC0C0038C83C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = CNE5C4C374;
+				IBSC_MODULE = watch_Extension;
+				INFOPLIST_FILE = watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.applepay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		DC9A9D621E20FC0C0038C83C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = "watch Extension/watch Extension.entitlements";
+				DEVELOPMENT_TEAM = CNE5C4C374;
+				INFOPLIST_FILE = "watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.applepay.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		DC9A9D631E20FC0C0038C83C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = "watch Extension/watch Extension.entitlements";
+				DEVELOPMENT_TEAM = CNE5C4C374;
+				INFOPLIST_FILE = "watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.applepay.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 		DCD2FCB11D2DDACC004E4674 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +615,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC9A9D641E20FC0C0038C83C /* Build configuration list for PBXNativeTarget "watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9A9D621E20FC0C0038C83C /* Debug */,
+				DC9A9D631E20FC0C0038C83C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9A9D661E20FC0C0038C83C /* Build configuration list for PBXNativeTarget "watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9A9D601E20FC0C0038C83C /* Debug */,
+				DC9A9D611E20FC0C0038C83C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCD2FC9A1D2DDACC004E4674 /* Build configuration list for PBXProject "applepay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -235,7 +235,7 @@ extension DetailViewController: PKPaymentAuthorizationViewControllerDelegate {
         print(payment.token)
         
         // Check - success
-        completion(PKPaymentAuthorizationStatus.success)
+        completion(.success)
         
     }
 
