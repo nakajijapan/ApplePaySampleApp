@@ -85,6 +85,9 @@ extension PaymentInterfaceController: PKPaymentAuthorizationControllerDelegate {
     
     func paymentAuthorizationControllerDidFinish(_ controller: PKPaymentAuthorizationController) {
         print("paymentAuthorizationControllerDidFinish")
+        controller.dismiss { 
+            print("finished")
+        }
     }
 }
 
