@@ -53,7 +53,8 @@ class PaymentInterfaceController: WKInterfaceController {
         request.countryCode = "JP"
         request.currencyCode = "JPY"
         request.supportedNetworks = [PKPaymentNetwork.visa, PKPaymentNetwork.masterCard]
-        
+        //request.requiredShippingAddressFields = [.postalAddress, .phone]
+
         request.merchantCapabilities = PKMerchantCapability.capability3DS
         request.paymentSummaryItems = [
             PKPaymentSummaryItem(label: "Item Price", amount: 999),
@@ -84,10 +85,25 @@ extension PaymentInterfaceController: PKPaymentAuthorizationControllerDelegate {
     }
     
     func paymentAuthorizationControllerDidFinish(_ controller: PKPaymentAuthorizationController) {
+
         print("paymentAuthorizationControllerDidFinish")
-        controller.dismiss { 
-            print("finished")
+        controller.dismiss {
+            print("controller finished")
         }
+
+        let closeAction = WKAlertAction(
+            title: "Close",
+            style: .default) {
+                self.popToRootController()
+        }
+        
+        self.presentAlert(
+            withTitle: "Thank you!",
+            message: nil,
+            preferredStyle: WKAlertControllerStyle.alert,
+            actions: [closeAction]
+        )
+
     }
 }
 

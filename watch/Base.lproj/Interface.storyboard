@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PQN-u7-epC">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16E183b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PQN-u7-epC">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,7 +31,7 @@
                 <controller identifier="PaymentInterfaceController" title="Product" id="Yb3-71-9FU" customClass="PaymentInterfaceController" customModule="watch_Extension">
                     <items>
                         <label width="136" alignment="left" text="Label" id="17H-le-yli"/>
-                        <imageView height="1" alignment="center" contentMode="scaleAspectFill" id="kz9-UO-eCp"/>
+                        <imageView alignment="center" id="kz9-UO-eCp"/>
                         <paymentButton width="1" alignment="left" id="umx-oE-LbM">
                             <connections>
                                 <action selector="paymentButtonDidTap" destination="Yb3-71-9FU" id="5NM-a2-isP"/>
